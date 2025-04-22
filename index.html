@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Responsive</title>
+</head>
+<body>
+    <div class="header">
+    <nav>
+        <ul class="right-header">
+        <li>Dashboard</li>
+        <li>Explore Courses</li>
+        <li>Submission</li>
+        <li>Premium</li>
+        </ul>
+        <img id="mobile-cta" class="mobile-menu" src="./menu.svg" alt="Menu">
+    
+        <img id="mobile-exit" class="mobile-menu exit" src="./exit.svg" alt="exit">
+    </nav>
+</div>
+    <div class="container">
+        <div class="item">
+            <h2>Art</h2>
+            <img src="./adrianna-geo-1rBg5YSi00c-unsplash.jpg" alt="">
+        </div>
+        <div class="item">
+            <h2>Gym</h2>
+            <img src="./samuel-girven-VJ2s0c20qCo-unsplash.jpg" alt="">
+        </div>
+        <h2>Coding</h2>
+            <img src="./luca-bravo-XJXWbfSo2f0-unsplash.jpg" alt="">
+        <div class="item"></div>
+    </div>
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+            nav = document.querySelector('nav');
+            mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click',() =>{
+            nav.classList.add('menu-btn')
+        })
+        mobileBtnExit.addEventListener('click',()=>{
+            nav.classList.remove('menu-btn')
+        })
+    </script>
+</body>
+</html>
